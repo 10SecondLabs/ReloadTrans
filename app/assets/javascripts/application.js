@@ -12,11 +12,4 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require bootstrap
-//= require isotope
-//= require flexslider
-//= require carousel
-//= require jquery.cslider
-//= require slider
-//= require fancybox
-//= require custom
+

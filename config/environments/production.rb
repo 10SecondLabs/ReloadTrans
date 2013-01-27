@@ -45,28 +45,7 @@ ReloadTransportation::Application.configure do
   config.assets.precompile << "social-icons.css"
   config.assets.precompile << "style.css"
   config.assets.precompile << "styleie9.css"
-  
-  config.assets.precompile << "anchor.js"
-  config.assets.precompile << "bootstrap.js"
-  config.assets.precompile << "carousel.js"
-  config.assets.precompile << "custom.js"
-  config.assets.precompile << "fancybox.js"
-  config.assets.precompile << "flexslider.js"
-  config.assets.precompile << "iso-custom.js"
-  config.assets.precompile << "isotope.js"
-  config.assets.precompile << "jquery-1.8.2.js"
-  config.assets.precompile << "jquery.cslider.js"
-  config.assets.precompile << "jquery.easing-1.3.pack.js"
-  config.assets.precompile << "jquery.fancybox-1.3.4.pack.js"
-  config.assets.precompile << "jquery.gmap.js"
-  config.assets.precompile << "jquery.gmap.min.js"
-  config.assets.precompile << "jquery.isotope.min.js"
-  config.assets.precompile << "jquery.js"
-  config.assets.precompile << "jquery.mousewheel-3.0.4.pack.js"
-  config.assets.precompile << "knockout.js"
-  config.assets.precompile << "slider.js"
-  
-  
+    
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH

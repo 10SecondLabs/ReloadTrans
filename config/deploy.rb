@@ -16,7 +16,6 @@ default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
-after "deploy", run "cd #{release_path}; rake assets:precompile RAILS_ENV=production "
 
 namespace :deploy do
   task :start do; end
@@ -37,7 +36,13 @@ namespace :deploy do
   task :symlink_config, roles: :app do
     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
   end
+  
+  task :precompile_assets, roles: :app do
+    run "cd #{release_path}; rake assets:precompile RAILS_ENV=production "
+  end
+  
   after "deploy:finalize_update", "deploy:symlink_config"
+  after "deploy:cleanup", "deploy:precompile_assets"
 
   desc "Make sure local git is in sync with remote."
   task :check_revision, roles: :web do

@@ -14,8 +14,8 @@
 				<a class="brand" href="index4.html"></i>Reload<span>Transportation</span></a>
           		<div class="nav-collapse collapse">
             		<ul class="nav">
-                			<li><a href="index4.html">Home</b></a></li>
-							<li><a href="about.html">About</b></a></li>
+                			<li><%= link_to "Home", :action => "index" %></li>
+							<li><%= link_to "About", :action => "about" %></li>
 
                 			
 						<li class="dropdown">
@@ -29,9 +29,9 @@
 								<li><a href="nashville.html">Nashville</a></li>
                 			</ul>
               			</li>
-						<li><a href="drivers.html">Drivers</a></li>					
-						<li><a href="contact.html">Contact Us</a></li>
-						<li><a href="pricing.html">Rates</a></li>
+						<li><%= link_to "Drivers", :action => "drivers" %></li>					
+						<li><%= link_to "Contact Us", :action => "contact" %></li>
+						<li><%= link_to "Rates", :action => "rates" %></li>
             		</ul>
           		</div>
         	</div>

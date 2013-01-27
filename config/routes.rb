@@ -1,8 +1,13 @@
 ReloadTransportation::Application.routes.draw do
   get "home/index"
+  get "home/about"
+  get "home/contact"
+  get "home/drivers"
+  get "home/rates"
 
-  resources :articles
+
   root:to => "home#index"
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

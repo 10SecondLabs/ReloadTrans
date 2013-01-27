@@ -19,6 +19,20 @@ ReloadTransportation::Application.configure do
 
   # Generate digests for assets URLs
   config.assets.digest = true
+  
+  config.middleware.use ExceptionNotifier,
+    sender_address: 'michaelw2608@gmail.com',
+    exception_recipients: 'woodsmall.michael@gmail.com'
+    
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.smtp_settings = {
+      :address              => "smtp.gmail.com",
+      :port                 => 587,
+      :domain               => 'michaelsplayground.com'
+      :user_name            => 'michaelw2608@gmail.com',
+      :password             => 'h4rryp0tt3r26',
+      :authentication       => 'plain',
+      :enable_starttls_auto => true  }
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH

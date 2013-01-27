@@ -44,6 +44,8 @@ GEM
       execjs
     coffee-script-source (1.4.0)
     erubis (2.7.0)
+    exception_notification (2.6.1)
+      actionmailer (>= 3.0.4)
     execjs (1.4.0)
       multi_json (~> 1.0)
     highline (1.6.15)
@@ -121,6 +123,7 @@ PLATFORMS
 DEPENDENCIES
   capistrano
   coffee-rails (~> 3.2.1)
+  exception_notification
   jquery-rails
   mysql2
   rails (= 3.2.11)

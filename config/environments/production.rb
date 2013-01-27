@@ -28,7 +28,7 @@ ReloadTransportation::Application.configure do
     config.action_mailer.smtp_settings = {
       :address              => "smtp.gmail.com",
       :port                 => 587,
-      :domain               => 'michaelsplayground.com'
+      :domain               => 'michaelsplayground.com',
       :user_name            => 'michaelw2608@gmail.com',
       :password             => 'h4rryp0tt3r26',
       :authentication       => 'plain',

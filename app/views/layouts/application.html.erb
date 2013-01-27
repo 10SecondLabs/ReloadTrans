@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ReloadTransportation</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+  	<title>Reload Transportation</title> 
+	<meta name="description" content="Reload Transportation"/>
+	<meta name="keywords" content="Trucking, Transportation, Reload, Intermodal, Logistics, Chicago, Kansas City, St Louis, Memphis" />
+	<meta name="author" content="Vincent M. Aguirre from 10 Second Labs"/>
+	<!-- end: Meta -->
+	
+	<!-- start: Mobile Specific -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- end: Mobile Specific -->
+	
+	<!-- start: Facebook Open Graph -->
+	<meta property="og:title" content=""/>
+	<meta property="og:description" content=""/>
+	<meta property="og:type" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:image" content=""/>
+	
+	
+	<!-- end: Facebook Open Graph -->
+
+	<%= stylesheet_link_tag  "application", :media => "all" %>
+	<%= stylesheet_link_tag  "bootstrap", :media => "all" %>
+	<%= stylesheet_link_tag  "bootstrap-responsive", :media => "all" %>
+	<%= stylesheet_link_tag  "social-icons", :media => "all" %>
+	<%= stylesheet_link_tag  "fancybox", :media => "all" %>
+	<%= stylesheet_link_tag  "hover", :media => "all" %>
+	<%= stylesheet_link_tag  "icons", :media => "all" %>
+	<%= stylesheet_link_tag  "icons-color", :media => "all" %>
+	<%= stylesheet_link_tag  "parallax-slider", :media => "all" %>
+	<%= stylesheet_link_tag  "parallax-slider2", :media => "all" %>
+	<%= stylesheet_link_tag  "style", :media => "all" %>
+	<%= stylesheet_link_tag  "styleie9", :media => "all" %>
+  
+
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Boogaloo">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Economica:700,400italic">
+
+  
 </head>
 <body>
+ <!--render header -->
+<%= render 'layouts/header' %>
+
 
 <%= yield %>
+
+<!--render footer-->
+<%= render 'layouts/footer' %>
+<!-- render scripts-->
+<%= render 'layouts/scripts'%>
+
 
 </body>
 </html>

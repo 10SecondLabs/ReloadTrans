@@ -13,4 +13,5 @@ class HomeController < ApplicationController
   
   def rates
   end
+  
 end

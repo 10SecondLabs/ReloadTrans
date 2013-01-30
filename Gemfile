@@ -40,6 +40,7 @@ gem 'exception_notification'
 
 # Deploy with Capistrano
 gem 'capistrano'
+gem 'devise'
 
 # To use debugger
 # gem 'debugger'

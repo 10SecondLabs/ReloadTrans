@@ -14,8 +14,8 @@
 				<a class="brand" href="index4.html"></i>Reload<span>Transportation</span></a>
           		<div class="nav-collapse collapse">
             		<ul class="nav">
-                			<li><%= link_to "Home", :action => "index" %></li>
-							<li><%= link_to "About", :action => "about" %></li>
+                			<li><%= link_to "Home", home_index_path %></li>
+							<li><%= link_to "About", home_about_path %></li>
 
                 			
 						<li class="dropdown">
@@ -29,9 +29,12 @@
 								<li><a href="nashville.html">Nashville</a></li>
                 			</ul>
               			</li>
-						<li><%= link_to "Drivers", :action => "drivers" %></li>					
-						<li><%= link_to "Contact Us", :action => "contact" %></li>
-						<li><%= link_to "Rates", :action => "rates" %></li>
+						<li><%= link_to "Drivers", home_drivers_path %></li>					
+						<li><%= link_to "Contact Us", home_contact_path %></li>
+						<li><%= link_to "Rates", home_rates_path %></li>
+						<%if current_user%>
+						<li><%= link_to "Logout", destroy_user_session_path , method: :delete%></li>
+						<%end%>
             		</ul>
           		</div>
         	</div>

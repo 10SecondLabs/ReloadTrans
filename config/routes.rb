@@ -1,10 +1,13 @@
 ReloadTransportation::Application.routes.draw do
+  devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}
+
   get "home/index"
   get "home/about"
   get "home/contact"
   get "home/drivers"
   get "home/rates"
 
+  match 'dashboard' => 'admin_home#dashboard'
 
   root:to => "home#index"
   

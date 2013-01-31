@@ -1,6 +1,7 @@
-<h1>AdminHome#dashboard</h1>
-<p>Find me in app/views/admin_home/dashboard.html.erb</p>
 
-<%if current_user%>
-<%=current_user.email%>
+
+<%if current_user.admin%>
+	<%=link_to "Add User", new_user_path%>
+<%else current_user%>
+	<a>Manage Lot</a>
 <%end%>

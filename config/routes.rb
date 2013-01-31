@@ -1,6 +1,10 @@
 ReloadTransportation::Application.routes.draw do
-  devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}
+  get "users/new"
 
+  get "users/create"
+
+  devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}
+  resources :users
   get "home/index"
   get "home/about"
   get "home/contact"
@@ -8,6 +12,10 @@ ReloadTransportation::Application.routes.draw do
   get "home/rates"
 
   match 'dashboard' => 'admin_home#dashboard'
+  
+  match 'dashboard/new' => 'admin_home#new'
+  
+ # post 'admin_home/create'
 
   root:to => "home#index"
   

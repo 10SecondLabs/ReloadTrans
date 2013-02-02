@@ -2,6 +2,10 @@ ReloadTransportation::Application.routes.draw do
   get "users/new"
 
   get "users/create"
+  
+  get "users/edit"
+  
+  put "users/update_password"
 
   devise_for :users, path_names: {sign_in: "login", sign_out: "logout"}
   resources :users

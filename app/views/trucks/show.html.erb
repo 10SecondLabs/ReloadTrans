@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Unique:</b>
+  <%= @truck.unique_id %>
+</p>
+
+<p>
+  <b>Driver:</b>
+  <%= @truck.driver_id %>
+</p>
+
+<p>
+  <b>Lot location:</b>
+  <%= @truck.lot_location %>
+</p>
+
+
+<%= link_to 'Edit', edit_truck_path(@truck) %> |
+<%= link_to 'Back', trucks_path %>

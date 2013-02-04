@@ -1,4 +1,13 @@
 ReloadTransportation::Application.routes.draw do
+  resources :trailers
+
+
+  resources :trucks
+
+
+  resources :drivers
+
+
   get "users/new"
 
   get "users/create"

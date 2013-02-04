@@ -1,0 +1,33 @@
+<%= form_for(@trailer) do |f| %>
+  <% if @trailer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@trailer.errors.count, "error") %> prohibited this trailer from being saved:</h2>
+
+      <ul>
+      <% @trailer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :unique_id %><br />
+    <%= f.text_field :unique_id %>
+  </div>
+  <div class="field">
+    <%= f.label :driver_id %><br />
+    <%= f.text_field :driver_id %>
+  </div>
+  <div class="field">
+    <%= f.label :truck_id %><br />
+    <%= f.text_field :truck_id %>
+  </div>
+  <div class="field">
+    <%= f.label :lot_location %><br />
+    <%= f.text_field :lot_location %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

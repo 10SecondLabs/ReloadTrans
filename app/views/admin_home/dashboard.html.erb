@@ -3,5 +3,8 @@
 <%if current_user.admin%>
 	<%=link_to "Add User", new_user_path%>
 <%else current_user%>
+	<%=link_to "Manage Drivers" ,  drivers_path%>
+	<%=link_to "Manage Trucks" ,  trucks_path%>
+	<%=link_to "Manage Trailers" ,  trailers_path%>
 	<a>Manage Lot</a>
 <%end%>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  unique_id: 
+  driver_id: 
+  lot_location: MyString
+
+two:
+  unique_id: 
+  driver_id: 
+  lot_location: MyString
